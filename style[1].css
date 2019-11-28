@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* header edits with wave */
+header{
+  background: linear-gradient(90deg, #8c86f0, #e6cbef);
+  height: 170px;
+  color: #fff;
+  padding: 8px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  font-size: 350%;
+}
+
+header:before, header:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  height: 50px;
+  background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+  background-size: 50px 50px;
+  background-position: 0 25px;
+  background-repeat: repeat-x;
+}
+
+header:after{
+  background:radial-gradient(closest-side, transparent, transparent 50%, #fff 50%);
+  background-size: 50px 50px;
+  background-position: 25px -25px;
+  background-repeat: repeat-x;
+  bottom:-25px;
+}
+
+/* buttons for sign in and log in */
+.log{
+  background-color: #fefaff;
+  border-radius: 32px;
+  border: 2px solid #b0b0f0;
+  transition-duration: 0.2s;
+  width: 15%;
+  text-align:center;
+  color: grey;
+  float: right;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* change color when hover */
+.log:hover {
+  background-color: aliceblue; /* Green */
+  color: grey;
+}
+
+/* footer / copyright */
+footer{
+  text-align: center;
+}
