@@ -1,8 +1,10 @@
+/* General for all pages */
 body{
   margin: 0;
   padding: 0;
 }
 
+/* Header */
 /* header edits with wave */
 header{
   background: linear-gradient(90deg, #2081C3, #63D2FF);
@@ -40,6 +42,39 @@ header:after{
   bottom:-25px;
 }
 
+
+/* navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(77, 84, 88);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #BED8D4;
+}
+
+li a:visited {
+  color: white;
+}
+
+
+/* Links */
 /* get rid of underlines on links */
 a{
   text-decoration: none;
@@ -51,6 +86,18 @@ a:visited {
   color: grey;
 }
 
+
+/* Logo in Index page */
+#indexLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+
+/* Sign in and Log In buttons */
 /* buttons for sign up and log in */
 .log{
   background-color: #fefaff;
@@ -70,13 +117,18 @@ a:visited {
   background-color: aliceblue;
   color: grey;
 }
+
+
+/* Footer */
 /* footer / copyright */
 footer{
   text-align: center;
+  clear: both;
 }
 
-/* profile pic */
 
+
+/* profile pic */
 .profPic {
   width:100px;
   height:100px;
@@ -87,11 +139,6 @@ footer{
   padding: 15px;
 }
 
-.logo {
-  height: 60px;
-  width: 300px;
-  padding: 10px;
-}
 .right {
   position: absolute;
   width:60px;
@@ -101,8 +148,15 @@ footer{
 }
 
 
-/* login page and sign up */
+/* Logo */
+.logo {
+  height: 60px;
+  width: 300px;
+  padding: 10px;
+}
 
+
+/* login and sign up form */
 .login-page{
   width: 360px;
   padding: 5% 0 0;
@@ -148,20 +202,31 @@ footer{
   display: none;
 }
 
+
+/* Home page */
+#heading{
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background: #BED8D4;
+  padding: 10px;
+  margin-bottom: 0;
+  width: 240px;
+}
+
 .aboutDiv{
   padding: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  width: 350px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   border: 7px solid #2081C3;
   background-color: #F7F9F9;
-  border-radius: 800px;
+  border-radius: 1500px;
 }
 
 p{
-  padding:20px;
+  padding:15px;
 }
 
 #about{
@@ -169,48 +234,8 @@ p{
 }
 
 
-/* navigation bar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(77, 84, 88);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* change background when hover */
-li a:hover {
-  background-color: #BED8D4;
-}
-
-li a:visited {
-  color: white;
-}
-
-#homeLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 300px;
-}
-
-
-
-/* collapsible effects */
-
+/* Tips page */
+/* Collapsible Effects */
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
 }
@@ -285,7 +310,6 @@ input[type='checkbox'] {
 }
 
 /* second drop down */
-
 .wrap-collabsible1 {
   margin-bottom: 1.2rem 0;
 }
@@ -360,7 +384,6 @@ input[type='checkbox'] {
 }
 
 /* third drop down */
-
 .wrap-collabsible2 {
   margin-bottom: 1.2rem 0;
 }
@@ -418,7 +441,7 @@ input[type='checkbox'] {
 }
 
 .toggle2:checked + .lbl-toggle2 + .collapsible-content2 {
-  max-height: 350px;
+  max-height: 15000px;
 }
 
 .toggle2:checked + .lbl-toggle2 {
@@ -434,8 +457,13 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
-/* fourth drop down */
+.youtubers{
+  color: #63D2FF;
+  margin-left: 0;
+  
+}
 
+/* fourth drop down */
 .wrap-collabsible3 {
   margin-bottom: 1.2rem 0;
 }
@@ -493,7 +521,7 @@ input[type='checkbox'] {
 }
 
 .toggle3:checked + .lbl-toggle3 + .collapsible-content3 {
-  max-height: 350px;
+  max-height: 1000px;
 }
 
 .toggle3:checked + .lbl-toggle3 {
@@ -510,7 +538,6 @@ input[type='checkbox'] {
 }
 
 /* fifth drop down */
-
 .wrap-collabsible4 {
   margin-bottom: 1.2rem 0;
 }
@@ -526,7 +553,7 @@ input[type='checkbox'] {
   font-family: monospace;
   font-size: 1.2rem;
   text-transform: uppercase;
-  text-align: left;
+  text-align: left; 
 
   padding: 1rem;
 
@@ -568,7 +595,7 @@ input[type='checkbox'] {
 }
 
 .toggle4:checked + .lbl-toggle4 + .collapsible-content4 {
-  max-height: 350px;
+  max-height: 1500px;
 }
 
 .toggle4:checked + .lbl-toggle4 {
@@ -584,22 +611,41 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
+.tips{
+  font-family: "Roboto", sans-serif;
+}
+
+.locations{
+  color: #2081C3;
+  margin-left: 0;
+}
+
+.description{
+  padding: 0;
+}
+
+.phoneNum{
+  color: #78D5D7;
+}
+
+.moreInfo{
+  text-decoration: grey underline;
+}
 
 
 /* Profile page edits */
-
 h4{
   color: #2081C3;
-  padding: 15px;
   font-family: monospace;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .profileTabs{
   border: 2px solid #2081C3;
   background-color: #2081C3;
-  width: 40%;
+  width: 45%;
   margin: 20px; 
+  float: left;
 }
 
 .tabBody{
@@ -622,5 +668,74 @@ h4{
   font-family: monospace;
   color: #BED8D4;
   background-color: white; 
+  padding: 10px;
+}
+
+.icons{
+  width:30px;
+  height:30px;
+  padding: 0px;
+  border: 2px solid grey;
+  border-radius: 32px;
+}
+
+.inputInfo{
+  font-family: monospace;
+  color: #BED8D4;
+  background-color: white; 
+  padding: 10px;
+  width: 95%;
+}
+
+.submitPass{
+  background-color: #fefaff;
+  border-radius: 32px;
+  border: 2px solid #CFDEE7;
+  transition-duration: 0.2s;
+  width: 15%;
+  text-align:center;
+  color: grey;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.submitPass:hover {
+  background-color: aliceblue;
+  color: grey;
+}
+
+
+/* Achievement Page */
+.AchieveDescript{
+  width:65px;
+  height:65px;
+  object-fit:cover;
+  background-size:cover;
+  background-position:center;
+  border-radius:00%;
+  padding: 15px;
+  border: 2px solid #2081C3;
+}
+
+.AchNav{
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+.AchFill{
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+.AchSearch{
+  width:250px;
+}
+
+.submitAch{
+  color: white;
+  background-color: #78D5D7; 
+  border: 1px solid grey;
+  border-radius: 20px;
   padding: 10px;
 }
